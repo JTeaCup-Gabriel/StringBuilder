@@ -23,6 +23,15 @@ public class Program {
 
 		System.out.println(p1);
 
+		Comment c3 = new Comment("Good night");
+		Comment c4 = new Comment("May the Force be with you");
+		// parse para conversão de String para Date:
+		Post p2 = new Post(sdf.parse("28/07/2018 23:14:19"), "Good night guys", "See you tomorrow", 5);
+		
+		p2.addComment(c3);
+		p2.addComment(c4);
+		
+		System.out.println(p2);
 	}
 
 }
